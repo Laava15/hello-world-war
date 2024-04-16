@@ -1,3 +1,18 @@
+@Library ('shared_library')
+pipeline {
+  agent any
+  stages {
+    stage('buid') {
+      steps {
+        script {
+          build()
+        }
+      }
+    }
+  }
+}
+
+
 pipeline {
   agent { label 'slave1' }
     stages {
