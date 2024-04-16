@@ -1,5 +1,5 @@
 @Library ('shared_lib')
-	Pipeline {
+	pipeline {
     agent any
       stages {
         stage('build') {
