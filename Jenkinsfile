@@ -1,20 +1,20 @@
 @Library ('shared_lib')
-pipeline {
-  agent any
-  stages {
-    stage('buid') {
-      steps {
-        script {
-          build()
+	Pipeline {
+    agent any
+      stages {
+        stage('buid') {
+          steps {
+            script {
+              build()
+            }
+          }
         }
       }
     }
-  }
-}
 
 
 pipeline {
-  agent { label 'slave1' }
+  agent any
     stages {
       stage('checkout') {
         steps {
