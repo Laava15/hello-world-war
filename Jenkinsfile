@@ -1,16 +1,3 @@
-@Library ('shared_lib')
-	pipeline {
-    agent any
-      stages {
-        stage('build') {
-          steps {
-            script {
-              build()
-            }
-          }
-        }
-      }
-    }
 
 
 pipeline {
