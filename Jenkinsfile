@@ -2,7 +2,7 @@
 	Pipeline {
     agent any
       stages {
-        stage('buid') {
+        stage('build') {
           steps {
             script {
               build()
